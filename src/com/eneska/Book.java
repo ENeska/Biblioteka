@@ -13,14 +13,19 @@ public class Book {
     long isbn;
 
     //konstruktor za jego pomocą tworzę obiekt
-    Book(String bookTitle, String bookAuthor, int bookRelease, int bookPages, String bookPublisher,
-         long bookIsbn){
-        title = bookTitle;
-        author =bookAuthor;
-        releaseDate =bookRelease;
-        pages =bookPages;
-        publisher = bookPublisher;
-        isbn =bookIsbn;
+    Book(String title, String author, int releaseDate, int pages, String publisher, long isbn){
+
+        this.title = title;
+        this.author =author;
+        this.releaseDate =releaseDate;
+        this.pages =pages;
+        this.publisher = publisher;
+        this.isbn =isbn;
+    }
+
+    //tworzę nowy konstruktor typ
+    Book(Book kniga) {
+        this(kniga.title, kniga.author, kniga.releaseDate, kniga.pages, kniga.publisher, kniga.isbn);
     }
 
     //metoda

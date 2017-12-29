@@ -9,9 +9,13 @@ public class Library {
 
         Book book2 = new Book("Mądrzej, szybciej, lepiej", "Duhigg Charles", 2017, 543,"Dom Wydawniczy PWN", 9793400069286l );
 
+        Book book3 = new Book(book1);
+
         System.out.println(appName);
         System.out.println("Dostępne książki");
         book1.printInfo();
         book2.printInfo();
+        book3.printInfo();
+
     }
 }
